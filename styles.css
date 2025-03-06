@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grand-container{
+    display: grid;
+    grid-template-columns: 1.2fr 8fr;
+    height: 100vh;
+}
+.sidebar{
+    background-color: #1992D4;
+    height: 100vh;
+    padding: 20px;
+}
+.dashboard-logo h2{
+    color: white;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    column-gap: 12px;
+}
+.dashboard-logo{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    column-gap: 12px;
+    align-items: center;
+}
+li > a{
+    justify-self: start;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    outline: none !important;
+}
+ul{
+    display: grid;
+    row-gap: 8px;
+    font-size: 24px;
+}
+img{
+    object-fit: cover;
+}
+.profile-displayer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+}
+.top-list{
+    margin-top: 32px;
+}
+.bottom-list{
+    margin-top: 42px;
+}
+.content-container{
+    display: grid;
+    grid-template-rows: 1.5fr 8fr;
+}
+.header-container{
+    padding: 16px 60px;
+}
+.top-navbar{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}
+.searchbar-container{
+    display: grid;
+    grid-template-columns: 0.5fr 16fr;
+    align-items: center;
+}
+.searchbar-container > i{
+    cursor: pointer;
+}
+.searchbar-container > div{
+    background-color: #E2E8F0;
+    border-radius: 32px;
+    height: 36px;
+}
+.profile-displayer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+    column-gap: 24px;
+}
+.profile-displayer > i{
+    justify-self: end;
+    cursor: pointer;
+}
+.profile-displayer > img{
+    width: 60px;
+    border-radius: 60px;
+    justify-self: end;
+}
+.bottom-navbar{
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.profile-displayer-2{
+    width: 420px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+}
+.profile-displayer-2 > div > p {
+    font-weight: bold;
+}
+.profile-image-2{
+    width: 80px;
+    border-radius: 120px;
+}
+.nav-buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 28px;
+}
+button{
+    padding: 10px 24px;
+    background-color: #1992D4;
+    border-radius: 32px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #157bb3;
+}
+.cards-container{
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 6fr 1.7fr;
+    padding: 0px 20px;
+}
+.left-side-container{
+    padding: 16px;
+}
+.left-cards-container{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    gap: 16px;
+}
+.card-container{
+    background-color: white;
+    border-left: #F0B429 solid 5px;
+    border-radius: 8px;
+    padding: 12px;
+    height: 200px;
+    box-shadow: 4px 4px 16px -7px rgba(0,0,0,0.75);
+    transition: background-color 0.3s ease;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+}
+.cards-icons-container{
+    margin-right: 12px;
+    justify-self: end;
+}
+.cards-icons-container i{
+    cursor: pointer;
+}
+.card-container:hover{
+    background-color: rgb(241, 241, 241);
+}
+.card-container > div > p{
+    color: #6d6d6d;
+}
+.card-container > div > h3{
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+.right-cards-container{
+    padding: 16px;
+    display: grid;
+}
+.top-cards-container{
+    margin-top: 16px;
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+}
+.announces-container > p{
+    margin-top: 6px;
+    color : #6d6d6d;
+}
+.announces-container > hr{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color : #6d6d6d;
+}
+.bottom-cards-container{
+    margin-top: 16px;
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    display: grid;
+    row-gap: 16px;
+}
+.trending-container > img{
+    display: grid;
+    width: 50px;
+    border-radius: 60px;
+}
+.trending-container > div > p{
+    color: #6d6d6d;
+}
+.trending-text-container{
+    display: grid;
+    row-gap: 2px;
+}
+.trending-container{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    column-gap: 8px;
+}
